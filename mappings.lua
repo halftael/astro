@@ -22,12 +22,14 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
-    [";"] = { ":" }, -- change description but the same command
-    ["w"] = { "5k" }, -- change description but the same command
-    ["s"] = { "5j" }, -- change description but the same command
+    [";"] = { ":" },                               -- change description but the same command
+    ["w"] = { "5k" },                              -- change description but the same command
+    ["s"] = { "5j" },                              -- change description but the same command
+    ["<leader>m"] = { "<cmd> ToggleTerm <CR> " },
   },
   t = {
     -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    ["jk"] = { "<C-\\><C-n>" },
+    ["<leader>m"] = { "<cmd> ToggleTerm <CR> " },
   },
 }
